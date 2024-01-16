@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch --env-file=src/build/src/.env src/build/src/index.js",
+    "start": "node build/src/index.js",
     "dev": "ts-node -r tsconfig-paths/register src/index.ts",
     "build": "tsc && copy \"docker-compose.yml\" \"build/src/docker-compose.yml\" && cd \"build/src\""
   },
@@ -29,3 +29,4 @@
     "typescript": "^5.3.3"
   }
 }
+
